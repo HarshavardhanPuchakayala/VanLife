@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body{
+  background: #FFF7ED;
+}
+/*Navbar*/
+.Navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  background-color: #FFF7ED;
+}
+nav ul{
+  display: flex;
+  gap:1rem;
+}
+nav label{
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 3rem;
+}
+nav li{
+  color: #4D4D4D;
+  text-align: right;
+  font-family: 'Inter',sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+/*HomePageTypography*/
+.Home-container{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0.46) 100%), 
+  url('./public/assets/hero-1.png'),
+   lightgray 0px -65.191px / 100% 178.109% no-repeat;
+   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 1rem;
+  gap:2rem;
+  min-height: 50vh;
+}
+.Home-container h1{
+  color: #FFF;
+  font-family: 'Inter',sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+ 
+}
+.Home-container p{
+  color: #FFF;
+  font-family: 'Inter',sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.Home-container button{
+  border-radius: 5px;
+  background: #FF8C38;
+  border: none;
+  padding: 1rem 0;
+  width:90%;
+  margin: 0 auto;
+}
+.Home-container a{
+  color: #FFF;
+  text-align: center;
+  font-family: 'Inter',sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+ 
+}
+.Home-container a:hover {
+  transform: translate(1px, 1px);
+}
+/*About*/
+.About-content{
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 1.5rem;
+  background: #FFF7ED;
+}
+.About-img{
+  width: 100%;
+
+}
+.About-content h1{
+  font-family: 'Inter', sans-serif;
+  color: #161616;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.375rem; 
+}
+.About-content .About-paragraph-1,.About-paragraph-2{
+  font-family: 'Inter', sans-serif;
+  color: #161616;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+}
+.About-content .About-paragraph-1{
+  margin: 2rem 0 1rem 0;
+}
+/*About-Typography*/
+.About-Typography{
+  margin-top: 3rem;
+  padding: 2rem ;
+  border-radius: 5px;
+  background: #FFCC8D;
+}
+.About-Typography h1{
+  font-family: 'Inter', sans-serif;
+  color: #161616;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+  margin-bottom: 1.5rem;
+}
+.About-Typography button{
+  font-family: 'Inter', sans-serif;
+  padding: 1rem;
+  color:white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+  /*button bg*/
+  border-radius: 0.625rem;
+  background: #161616;
+}
+
+/*vans*/
+.Vans-Van{
+  padding: 3rem 1.5rem;
+  background: #FFF7ED;
+}
+.UnderLine{
+  color: #201F1D;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-decoration-line: underline;
+}
+.vans-img{
+ width: 100%;
+ margin: 2rem 0;
+}
+.btn{
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  color: #FFEAD0;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  border-radius: 5px;
+background: #E17654;
+}
+.Vans-Van h1{
+  font-family: 'Inter', sans-serif;
+  color: #161616;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.125rem;
+  margin: 1rem 0; 
+}
+.price{
+  font-family: 'Inter', sans-serif;
+  color: #161616;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.price span{
+  color: #161616;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.Vans-Text{
+  font-family: 'Inter', sans-serif;
+  color: #161616;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+}
+.Vans-Van button{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 5px;
+  background: #FF8C38;
+  padding:  1rem;
+  border: none;
+}
+/*Login*/
+.SignIn{
+  background: #FFF7ED;
+  padding: 8rem 1rem;
+}
+.SignInHeading{
+  color: #161616;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom:2rem;
+}
+.SignIn form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 1rem auto;
+ 
+}
+form input{
+  display: flex;
+  padding: 0.875rem;
+  border: none;
+}
+form button{
+  border-radius: 6px;
+  background: #FF8C38;
+  border: none;
+  padding: 1rem 0;
+  box-shadow: 0px 1px 2px 0px rgba(28, 15, 15, 0.426);
+  margin: 1.5rem 0;
+}
+form button:hover{
+  box-shadow: 0px 10px 20px 0px rgba(199, 16, 16, 0.426);
+}
+form a{
+  color:#FFF;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.create-account{
+  color: #161616;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.create-account span{
+  color: #FF8C38;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+/*Error*/
+.Error{
+  padding: 8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.ErrorHeading{
+  color: #161616;
+  font-family: 'Inter';
+  font-size: 2rem;
+  font-weight: 700;
+}
+.ReturnBtn{
+  width: 100%;
+  border-radius: 4.983px;
+  background: #161616;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+/*FOOTER*/
+footer{
+  display: flex;
+  width: 100%;
+  padding: 1.6rem 6.625rem;
+  justify-content: center;
+  align-items: center;
+  background: #252525;
+}
+footer p{
+  color: #AAA;
+  font-family: 'Inter',sans-serif;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4375rem;
+}
