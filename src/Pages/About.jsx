@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 export default function About(){
     return(
         <>
@@ -12,7 +12,7 @@ export default function About(){
         
             <div className="About-Typography">
                 <h1>Your destination is waiting.<br/>Your van is ready.</h1>
-                <button>Explore our vans</button>
+                <Link to="/Vans">Explore our vans</Link>
             </div>
         </div>
         </>

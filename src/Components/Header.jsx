@@ -1,15 +1,15 @@
 import React from "react";
-
+import {Link} from "react-router-dom"
 export default function Navbar(){
     return(
-        <nav>
+        <header>
              <div className='Navbar'>
-                 <label for="logo">#VANLIFE</label> 
-                 <ul>
-                    <li>About</li>
-                    <li>Vans</li>
-                </ul> 
+                <Link to="/" className="logo">#VANLIFE</Link>
+                <nav>
+                 <Link to="/about">About</Link>
+                 <Link to="/Vans">Vans</Link>
+                 </nav>
             </div>
-         </nav>
+        </header> 
     )
 }

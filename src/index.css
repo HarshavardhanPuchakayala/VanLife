@@ -10,32 +10,36 @@
 }
 body{
   background: #FFF7ED;
+  min-width: 360px;
 }
 /*Navbar*/
 .Navbar{
   display: flex;
   justify-content: space-between;
   padding: 1.2rem;
-  background-color: #FFF7ED;
 }
-nav ul{
+nav{
   display: flex;
-  gap:1rem;
+  gap:2rem;
 }
-nav label{
+ .logo{
   color: #000;
   font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
   line-height: 3rem;
 }
-nav li{
+nav a{
   color: #4D4D4D;
   text-align: right;
   font-family: 'Inter',sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 3rem;
+}
+header a:hover{
+  color: #000;
+  text-decoration-line: underline;
 }
 /*HomePageTypography*/
 .Home-container{
@@ -62,7 +66,7 @@ nav li{
   font-size: 1rem;
   font-weight: 500;
 }
-.Home-container button{
+.Home-container .Home-btn{
   border-radius: 5px;
   background: #FF8C38;
   border: none;
@@ -77,17 +81,15 @@ nav li{
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 2rem;
- 
 }
 .Home-container a:hover {
-  transform: translate(1px, 1px);
+  transform: translate(4px, 1px);
 }
 /*About*/
 .About-content{
   display: flex;
   flex-direction: column;
   margin: 3rem 1.5rem;
-  background: #FFF7ED;
 }
 .About-img{
   width: 100%;
@@ -125,7 +127,7 @@ nav li{
   line-height: 1.875rem;
   margin-bottom: 1.5rem;
 }
-.About-Typography button{
+.About-Typography a{
   font-family: 'Inter', sans-serif;
   padding: 1rem;
   color:white;
@@ -140,7 +142,6 @@ nav li{
 /*vans*/
 .Vans-Van{
   padding: 3rem 1.5rem;
-  background: #FFF7ED;
 }
 .UnderLine{
   color: #201F1D;
@@ -209,7 +210,6 @@ background: #E17654;
 }
 /*Login*/
 .SignIn{
-  background: #FFF7ED;
   padding: 8rem 1rem;
 }
 .SignInHeading{
@@ -297,7 +297,6 @@ form a{
 footer{
   display: flex;
   width: 100%;
-  padding: 1.6rem 6.625rem;
   justify-content: center;
   align-items: center;
   background: #252525;
@@ -309,4 +308,5 @@ footer p{
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.4375rem;
+  margin: 4rem auto;
 }

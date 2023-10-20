@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import {Link,useParams} from 'react-router-dom'
+
 export default function Vans(){
-    return(
-        <div className="Vans-Van">
-            <p className="UnderLine">Back to all Vans</p>
-            <img src="./assets/ModestExplorer.png" className="vans-img"/>
-            <p className="btn">Simple</p>
-            <h1>Modest Explorer</h1>
-            <p className="price">$60<span>/day</span></p>
-            <p className="Vans-Text">The Modest Explorer is a van designed to get you out of the house and into nature. This beauty is equipped with solar panels, a composting toilet, a water tank and kitchenette. The idea is that you can pack up your home and escape for a weekend or even longer!</p>
-            <button>Rent this van</button>
+    const [Van,setVan]=useState([])
+    useEffect(()=>{
+        fetch("/api/vans")
+        .then(res=>res.json())
+        .then(data=>setVan(data.Van))
+    },[])
+    const vanElements = vans.map(van => (
+        <div key={van.id} className="van-tile">
+            <Link to={`/vans/${van.id}`}>
+                <img src={van.imageUrl} />
+                <div className="van-info">
+                    <h3>{van.name}</h3>
+                    <p>${van.price}<span>/day</span></p>
+                </div>
+                <i className={`van-type ${van.type} selected`}>{van.type}</i>
+            </Link>
         </div>
+    ))
+    return(
+        <div className="van-list-container">
+        <h1>Explore our van options</h1>
+        <div className="van-list">
+            {vanElements}
+        </div>
+    </div>
     )
 }
